@@ -1,0 +1,238 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: border-box;
+}
+
+.nav_bar{
+    height: 70px;
+
+    background-color: rgb(33, 22, 39);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid rgba(168, 85, 247, 0.15) ;
+}
+a{
+    text-decoration: none;
+    color: #f8fafc;
+}
+.logo{
+
+    padding-left:30px ;
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    font-weight: 800;
+    color: #f8fafc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+}
+
+.default:hover{
+        text-shadow: 0 0 10px rgba(168, 85, 247, 0.6), 
+                 0 0 20px rgba(168, 85, 247, 0.2);
+                 scale: 1.12;
+}
+.nav_location{
+
+    font-family: Plus Jakarta Sans, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+
+    .home{
+        padding-left: 30px;
+        transition-duration: 0.5s;
+       
+    transition-timing-function: cubic-bezier();
+    }
+    .education{
+        padding-left: 40px;
+        transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+    }
+    .experience{
+        padding-left: 40px;
+        transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier();
+    }
+    .projects{
+        padding-left: 40px;
+        padding-right: 40px;
+        transition-duration: 0.5s;
+        transition-timing-function: cubic-bezier();
+    }
+    .contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 25px;
+        padding-right: 25px;
+
+    #btn {
+        margin: 100px;
+        padding: 15px 40px;
+        border: none;
+        outline: none;
+        color: #FFF;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 12px;
+    }
+    #btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+    }
+/* glow */
+    #btn::before {
+    content: "";
+    background: linear-gradient(135deg, #a855f7, #38bdf8);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height:  calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+    }
+
+    @keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+    }
+
+    /* hover */
+    #btn:hover::before {
+    opacity: 1;
+    }
+
+    #btn:active:after {
+    background: transparent;
+    
+    }
+
+    #btn:active {
+        color: #000;
+        font-weight: bold;
+        }
+    }
+}
+
+main{
+    display: flex;
+    background-color: #000001;
+    justify-content: space-between;
+}
+.greet{
+    margin: 200px 30px 20px 70px;
+    color: #FFF;
+    width: 600px;
+    position: relative;
+    left: 100px;
+
+    .name{
+         
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        font-weight: 600;
+        letter-spacing: 2px;
+
+        .my-name{
+            color:rgb(142, 0, 250) ;
+            text-shadow: 0 0 10px rgba(168, 85, 247, 0.6), 
+                         0 0 20px rgba(168, 85, 247, 0.2);
+
+            
+            transition-timing-function: ease-in-out;
+            scale: 0;
+                 
+        }
+
+    }
+}
+.dp{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-image: url(file_0000000077b47208862170be7794007b.png);
+    background-size: cover;
+    margin: 100px 70px 30px 70px;
+    right: 40px;
+}
+
+.role{
+
+    margin-top: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+} 
+
+.my-role{
+    position:relative;
+    display: inline-block;
+}
+
+.my-role::before{
+
+    content: "Web Developer";
+    color: #ff7f50;
+    animation: words 20s infinite;
+}
+.my-role::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+
+
+    animation: cursor .8s infinite , typing 20s steps(14) infinite;
+
+}
+
+@keyframes cursor {
+            to{
+                border-left: 2px #000001 solid    ;
+            }
+}
+@keyframes words {
+    0%,20%{
+        content: "Web Developer";
+    }
+    21%,40%{
+        content: "Front-End Developer";
+    }
+    41%,60%{
+        content: "Back-End Developer";
+    }
+    61%,100%{
+        content: "Full-Stack Developer";
+    }
+}
+
+@keyframes typing {
+    0%,10%,15%,30%,35%,50%,55%,70%,75%,90%,95%,100%{
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
+
