@@ -60,20 +60,30 @@ a{
     gap: 5vh   ;
 }
 .txt-pro{
-    font-family: "merriweather" , serif;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"GRAD" 0;
     color: #c084fc;
     text-transform: capitalize;
-    font-size: 2vh;
+    font-size: 1.7vh;
 }
 
 .hire-me{
-    height: 5vh;
-    width: 10vh;
+    height: 6vh;
+    width: 12vh;
     border: none;
     border-radius: 30vh;
     background : rgba(139, 92, 246, 0.05);
     color: white;
     border: 2px rgba(103, 3, 196, 0.548) solid;
-    font-family: "merriweather" , serif;
-    font-weight: 600;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:<weight>;
+    font-style:normal;
+    font-variation-settings:"GRAD" 0;
+    font-weight:600;
+    font-size: 1.7vh;
+    padding: 15px;
 }
