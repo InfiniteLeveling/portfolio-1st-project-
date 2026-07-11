@@ -68,7 +68,16 @@ a{
     color: #c084fc;
     text-transform: capitalize;
     font-size: 1.7vh;
+
+    transition: color 1s ease-in-out;
 }
+
+.txt-pro:hover{
+
+    color: aliceblue;
+
+}
+
 
 .hire-me{
     height: 6vh;
@@ -86,4 +95,61 @@ a{
     font-weight:600;
     font-size: 1.7vh;
     padding: 15px;
+    z-index: 100;
+    position :relative;
 }
+
+
+
+
+/* animation for navbar elements  */
+
+.txt-pro{
+    position: relative;
+    color: #c084fc;
+    transition: color 0.3s ease;
+}
+
+.txt-pro:hover{
+    color: white;
+}
+
+.txt-pro::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right,#82209d,#7a17ba,#3800d1,#2626fd);
+    transition: width 0.3s ease;
+}
+
+.txt-pro:hover::after{
+    width: 100%;
+}
+
+.hire-me{
+    position: relative;
+    bottom: 0px;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1;
+
+    transition: button 5s ease-in-out;
+}
+.hire-me:hover{
+    bottom: 2px;
+    border: 2px white solid;
+    
+}
+
+.hire-me::after{
+    content: '';
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    /* translate: -50% -50%;
+    border-radius: 30vh; */
+    
+}
+
