@@ -309,10 +309,10 @@ a {
     transition: glowing-btn-pro 0s ease-in-out;
 }
 .to-project:hover{
-    box-shadow: 0 0 0px #82209d,
-        0 0 10px #82209d,
-        0 0 20px #7a17ba,
-        0 0 50px #2626fd;
+    box-shadow:
+        0 0 5px #82209d,
+        0 0 2px #7a17ba,
+        0 0 5px #2626fd;
     scale: 1.5;
 }
 .contact-me{
@@ -324,3 +324,64 @@ a {
         0 0 20px red;
     scale: 1.5;
 }
+
+.animated-text {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.animated-text span {
+    position: relative;
+}
+
+.animated-text span::before {
+    content: "Web Developer";
+    color: #ff7f50;
+    text-shadow: 0 0 5px #ff7f50;
+    animation: words 16s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 8px);
+    background:linear-gradient(#0c051a);
+    border-left: 2px #ff7f50 solid;
+    right: -8px;
+    animation: cursor .8s infinite , typing 16s steps(14) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left:#2f3542 ;
+    }
+}
+@keyframes words {
+    0%,20%{
+        content: "Frontend Developer";
+    }
+    21%,40%{
+        content: "Backend Developer";
+    }
+    41%,60%{
+        content: "Full-stack Developer";
+    }
+    61%,80%{
+        content: "Gamer";
+    }
+    81%,100%{
+        content: "Learner";
+    }
+}   
+@keyframes typing {
+        10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+            width: 0;
+        }
+        5%,20%,25%,40%,45%,60%,65%,80%,85%{
+            width: calc(100% + 8px);
+        }
+}
+
+/* ----------------------------------------
+                 about me
+-------------------------------------------*/
