@@ -169,7 +169,7 @@ a {
     margin-top: 30vh;
     margin-left: 20vh;
     max-width: 100vh;
-    max-height: 50vh;
+    max-height: 100vh;
     gap: 2vh;
     color: white;
 }
@@ -188,8 +188,8 @@ a {
     background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat;
-    box-shadow: 0 0 25px rgba(130, 32, 157, 0.5),
-        0 0 50px rgba(38, 38, 253, 0.3);
+    box-shadow: 0 9px 25px rgba(130, 32, 157, 0.5),
+        0 9px 50px rgba(38, 38, 253, 0.3);
     flex-shrink: 0;
     position: relative;
     left: 40vh;
@@ -346,7 +346,7 @@ a {
     position: absolute;
     height: 100%;
     width: calc(100% + 8px);
-    background:linear-gradient(#0c051a);
+    background:linear-gradient(#080015);
     border-left: 2px #ff7f50 solid;
     right: -8px;
     animation: cursor .8s infinite , typing 16s steps(14) infinite;
@@ -385,3 +385,17 @@ a {
 /* ----------------------------------------
                  about me
 -------------------------------------------*/
+
+.about-section{
+    height: 100vh;
+    background: linear-gradient(#0c051a,#080015, #000000);
+
+}
+.about-me{
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    position: relative;
+    top: 120px;
+}
