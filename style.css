@@ -398,4 +398,101 @@ a {
     margin-top: 160px;
     position: relative;
     top: 120px;
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0  10px rgb(207, 113, 247);
+}
+.about-describtion{
+    display: flex;
+    justify-content: center;
+}
+.describtion{
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    color: #c084fc;
+    position: relative;
+    top: -30px;
+}
+.content-section{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    display: flex;
+    gap:5%;
+}
+.professional-overview-section{
+    height: 80vh;
+    width: 50%;
+    border: 2px white solid;
+}
+.stats-section{
+    height: 80vh;
+    width: 50%;
+    border: 2px white solid;
+    position: relative;
+}
+.professional-overview{
+    margin: 5%;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 0  10px rgb(207, 113, 247);
+}
+
+.para-1{
+    color: #c084fc;
+    margin-right: 10%;
+    margin-left: 5%;
+    font-size: 17px;
+    line-height: 25px;
+}
+.para-2{
+    color: #c084fc;
+    margin-right: 10%;
+    margin-left: 5%;
+    font-size: 17px;
+    line-height: 25px;
+}
+.skill-showcase{
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.first-line{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    height: 10%;
+    margin-bottom: 8%;
+}
+.react-next-js {
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+}
+.javascript{
+    height: 10%;
+    width: 18%;
+    padding: 5px 0 5px 0;
+}
+.second-line{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    height: 10%;
+    margin-bottom: 8%;
+}
+.third-line{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    height: 10%;
+    margin-bottom: 8%;
+}
+.fourth-line{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    height: 10%;
+    margin-bottom: 8%;
 }
