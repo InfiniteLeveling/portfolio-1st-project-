@@ -16,7 +16,7 @@
 
 
 .navbar {
-    position: sticky;
+    position:-webkit-sticky;
     height: 80px;
     width: 100%;
     background: transparent;
@@ -30,7 +30,8 @@
 }
 
 body {
-    background: linear-gradient(#030008, #0c051a, #14082e);
+    /* background: linear-gradient(#030008, #0c051a, #14082e,#000000); */
+    background-color: black;
     min-height: 100vh;
 }
 
@@ -346,7 +347,7 @@ a {
     position: absolute;
     height: 100%;
     width: calc(100% + 8px);
-    background:linear-gradient(#080015);
+    background:linear-gradient(black);
     border-left: 2px #ff7f50 solid;
     right: -8px;
     animation: cursor .8s infinite , typing 16s steps(14) infinite;
@@ -388,7 +389,7 @@ a {
 
 .about-section{
     height: 100vh;
-    background: linear-gradient(#0c051a,#080015, #000000);
+    background: black;
 
 }
 .about-me{
@@ -424,13 +425,6 @@ a {
 .professional-overview-section{
     height: 80vh;
     width: 50%;
-    border: 2px white solid;
-}
-.stats-section{
-    height: 80vh;
-    width: 50%;
-    border: 2px white solid;
-    position: relative;
 }
 .professional-overview{
     margin: 5%;
@@ -464,16 +458,30 @@ a {
     gap: 12%;
     height: 10%;
     margin-bottom: 8%;
+    position: relative;
+    left: -20px;
 }
 .react-next-js {
     height: 18%;
     width: 25%;
     padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
 }
 .javascript{
     height: 10%;
     width: 18%;
     padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
 }
 .second-line{
     display: flex;
@@ -481,6 +489,29 @@ a {
     gap: 12%;
     height: 10%;
     margin-bottom: 8%;
+    
+}
+.nodejs-expressjs{
+    height: 18%;
+    width: 28%;
+    padding: 5px 6px 5px 6px;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
+}
+.restful-apis{
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
 }
 .third-line{
     display: flex;
@@ -488,6 +519,30 @@ a {
     gap: 12%;
     height: 10%;
     margin-bottom: 8%;
+    position: relative;
+    left: -10px;
+}
+.html-css{
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
+}
+.sql-database{
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
 }
 .fourth-line{
     display: flex;
@@ -495,4 +550,48 @@ a {
     gap: 12%;
     height: 10%;
     margin-bottom: 8%;
+    position: relative;
+    left: -10px;
+}
+.git{
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
+}
+.ui-ux-design{
+    height: 18%;
+    width: 25%;
+    padding: 5px 0 5px 0;
+    border-radius:8vh;
+    border: none;
+    background: rgba(139, 92, 246, 0.05);
+    color: #c084fc;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    scale: 1.2;
+}
+
+.stats-section{
+    height: 80vh;
+    width: 60%;
+    border: 2px rgba(103, 3, 196, 0.548) solid;
+    position: relative;
+    border-radius: 25px;
+    border-left: none;
+    background: rgba(26, 19, 43, 0.107);
+    overflow: hidden;
+}
+.stats-section::after{
+    content: "";
+    height: 98%;
+    width: 6px;
+    position: absolute;
+    top: 12px;
+    bottom: 15px;
+    background: linear-gradient( #82209d, #7a17ba, #3800d1, #2626fd);
 }
