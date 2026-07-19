@@ -16,7 +16,6 @@
 
 
 .navbar {
-    position:-webkit-sticky;
     height: 80px;
     width: 100%;
     background: transparent;
@@ -594,4 +593,65 @@ a {
     top: 12px;
     bottom: 15px;
     background: linear-gradient( #82209d, #7a17ba, #3800d1, #2626fd);
+}
+.first{
+    height: 9%;
+    color: white;
+    margin: 5%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    bottom: -20px;
+    text-shadow: 0 0  10px rgb(207, 113, 247);
+    border-bottom: #c084fc7b 2px solid;
+}
+.openwork{
+    position: relative;
+    top: -10px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 750    ;
+    color: white;
+    border: 3px #42429e solid;
+    background: #42429e46;
+    box-shadow: 0 0 10px #42429e;
+}
+.second{
+    height: 30%;
+    width: 80%;
+    color: white;
+    margin: 5%;
+    text-transform: uppercase;
+    border-bottom: #c084fc7b 1px solid;
+}
+#lane1{
+    display: flex;
+    gap: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.sec{
+    color: #c084fc;
+}
+#MY-NAME{
+    color: cyan;
+}
+
+.third{
+    height: 40%;
+    width: 80%;
+    margin: 5%;
+    color: #c084fc;
+    
+}
+.quote{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
 }
