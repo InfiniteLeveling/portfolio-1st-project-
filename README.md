@@ -2,10 +2,13 @@
 
 # 🌌 Gouranga . Dev — Modern Developer Portfolio
 
-### *A sleek, high-impact personal portfolio featuring glassmorphism & futuristic dark-mode aesthetics.*
+### *A sleek, high-impact personal portfolio featuring glassmorphism, glowing accents, & futuristic dark-mode aesthetics.*
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](LICENSE)
 [![Design-Dark_Mode-7a17ba](https://img.shields.io/badge/Design-Dark%20Mode-7a17ba?style=for-the-badge&logo=visualstudiocode)](style.css)
 [![Status-Active-brightgreen](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
@@ -18,7 +21,7 @@
 
 > **First impressions matter. In a sea of cookie-cutter portfolios, your online presence should leave a lasting impression.**
 >
-> **Gouranga . Dev** is a crafted personal developer portfolio designed to showcase modern web design standards—featuring dark cosmic gradients, glassmorphism UI components, glowing neon accents, and smooth micro-interactions.
+> **Gouranga . Dev** is a crafted personal developer portfolio designed to showcase modern web design standards—featuring dark cosmic gradients, glassmorphism UI components, glowing neon accents, an interactive skill showcase, and an engineering profile dashboard.
 
 ---
 
@@ -47,14 +50,17 @@
 | **🔮 Animated Navigation** | Sleek sliding underline effect on hover (`::after` pseudo-element with neon gradient fills). |
 | **🖼️ Glowing Profile Avatar** | Circular portrait container with multi-layer CSS box shadows (`box-shadow: 0 0 25px...`) and scale transformation. |
 | **⚡ Call to Action CTAs** | Glowing gradient buttons ("Enter project", "Let's talk", and "Hire Me") designed to drive engagement. |
-| **📱 Pure Vanilla Code** | Zero external frameworks—100% lightweight, ultra-fast loading HTML5 & CSS3. |
+| **👨‍💻 About & Overview** | Comprehensive section detailing professional overview, engineering principles, and core focus areas. |
+| **🚀 Skill Showcase Grid** | Interactive badges highlighting React, Next.js, JavaScript, Node.js, Express, REST APIs, SQL, Git, and UI/UX. |
+| **📊 Engineering Profile Card** | Dashboard interface featuring "Open To Work" status badge, dynamic role highlights, and core philosophy quote. |
+| **📱 Pure Lightweight Code** | 100% clean, ultra-fast loading HTML5 & CSS3 with custom design tokens. |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Markup**: [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) semantic structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`)
-- **Styling**: [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) Flexbox layout, keyframes, transitions, text-clip gradients, and glassmorphism filters
+- **Frontend Core**: [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) semantic layout (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`) & [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) Flexbox, keyframes, transitions, and glassmorphism filters
+- **Engineering Competencies**: React, Next.js, JavaScript (ES6+), Node.js, Express.js, RESTful APIs, SQL Databases, Git, UI/UX Design
 - **Typography**: Google Fonts ([Google Sans](https://fonts.google.com/), [Merriweather](https://fonts.google.com/specimen/Merriweather), [Roboto](https://fonts.google.com/specimen/Roboto))
 
 ---
@@ -147,14 +153,18 @@ The architecture follows modern clean layout separation:
 
 ```mermaid
 graph TD;
-    Body[body: Cosmic Dark Background] --> Header[Header: Glassmorphic Sticky Navigation]
-    Header --> Logo[Brand Logo: Gouranga . Dev]
-    Header --> NavLinks[Nav Items: Home, About, Skills, Projects, Contact]
-    Header --> HireBtn[CTA Button: Hire Me]
+    Body["body: Cosmic Dark Background"] --> Header["Header: Glassmorphic Sticky Navigation"]
+    Header --> Logo["Brand Logo: Gouranga . Dev"]
+    Header --> NavLinks["Nav Items: Home, About, Skills, Projects, Contact"]
+    Header --> HireBtn["CTA Button: Hire Me"]
     
-    Body --> Hero[Main: Hero Section]
-    Hero --> Bio[Welcome Box: Name, Role, Bio & CTA Buttons]
-    Hero --> Avatar[Profile Pic: Glowing Avatar with Border Gradient]
+    Body --> Hero["Main: Hero Section"]
+    Hero --> Bio["Welcome Box: Name, Role, Bio & CTA Buttons"]
+    Hero --> Avatar["Profile Pic: Glowing Avatar with Border Gradient"]
+
+    Body --> About["About Section"]
+    About --> Overview["Professional Overview & Skill Showcase Grid"]
+    About --> ProfileCard["Engineering Profile Card: Status, Role & Quote"]
 ```
 
 ---
