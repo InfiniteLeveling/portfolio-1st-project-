@@ -141,7 +141,7 @@ a {
     bottom: 0px;
     border: 2px rgba(103, 3, 196, 0.548) solid;
     scale: 1;
-    transition: button 5s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .hire-me:hover {
@@ -268,9 +268,9 @@ a {
     border: none;
     border-radius: 10vh;
     background: linear-gradient(orange, orangered, red, orange);
-    box-shadow: 0 0 ;0px orange,
-        0 0 ;0px orangered,
-        0 0 ;0px red;
+    box-shadow: 0 0 0px orange,
+        0 0 0px orangered,
+        0 0 0px red;
     color: white;
     font-weight: 600;
     scale: 1.3;
@@ -299,30 +299,32 @@ a {
 }
 
 .my-name {
-    transition: text-shadow .1s ease-in-out;
+    transition: text-shadow 0.3s ease-in-out;
 }
 .my-name:hover {
     text-shadow: 0 0 5px #82209d, 0 0 10px #82209d, 0 0 20px #7a17ba, 0 0 50px #2626fd;
 }
 
-.to-project{
-    transition: glowing-btn-pro 0s ease-in-out;
+.to-project {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.to-project:hover{
+.to-project:hover {
     box-shadow:
-        0 0 5px #82209d,
-        0 0 2px #7a17ba,
-        0 0 5px #2626fd;
-    scale: 1.5;
+        0 0 12px #82209d,
+        0 0 24px #7a17ba,
+        0 0 35px #2626fd;
+    scale: 1.4;
+    cursor: pointer;
 }
-.contact-me{
-    transition: glowing-btn-con 0s ease-in-out;
+.contact-me {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contact-me:hover{
-    box-shadow: 0 0 10px orange,
-        0 0 20px orangered,
-        0 0 20px red;
-    scale: 1.5;
+.contact-me:hover {
+    box-shadow: 0 0 12px orange,
+        0 0 24px orangered,
+        0 0 35px red;
+    scale: 1.4;
+    cursor: pointer;
 }
 
 .animated-text {
@@ -450,6 +452,15 @@ a {
     margin-right: 10%;
     margin-left: 5%;
     margin-top: 5%;
+}
+.skill-showcase button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.skill-showcase button:hover {
+    scale: 1.28;
+    border-color: #c084fc;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.5);
 }
 .first-line{
     display: flex;
@@ -584,6 +595,7 @@ a {
     border-left: none;
     background: rgba(26, 19, 43, 0.107);
     overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .stats-section::after{
     content: "";
@@ -613,11 +625,17 @@ a {
     border: none;
     border-radius: 6px;
     text-transform: uppercase;
-    font-weight: 750    ;
+    font-weight: 750;
     color: white;
     border: 3px #42429e solid;
     background: #42429e46;
     box-shadow: 0 0 10px #42429e;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.openwork:hover {
+    box-shadow: 0 0 20px #82209d, 0 0 10px #42429e;
+    scale: 1.05;
 }
 .second{
     height: 30%;
@@ -654,4 +672,13 @@ a {
     font-size: 20px;
     text-transform: capitalize;
     text-align: center;
+}
+
+/* ---------------------------------------
+            about me animation
+------------------------------------------*/
+
+.stats-section:hover{
+    box-shadow: 0 0 20px 2px rgba(56, 189, 248, 0.5), 0 0 40px rgba(130, 32, 157, 0.4);
+    scale: 1.015;
 }
