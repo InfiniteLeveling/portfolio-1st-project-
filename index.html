@@ -3,115 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Gouranga | Full-Stack Engineer Portfolio</title>
+    <meta name="description" content="Personal developer portfolio of Gouranga, Full-Stack Engineer specializing in modern web design, scalable backend architectures, and refined digital experiences.">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <div class="logo-div">
                 <a href="#home" class="logo">Gouranga <span class="-dev">. Dev</span></a>
             </div>
 
-            <div class="navigation">
-                <a href="#home" class="home txt-pro" id="ani-nav">Home</a>
-                <a href="#about" class="about txt-pro" id="ani-nav">About</a>
-                <a href="skills" class="skills txt-pro" id="ani-nav">Skills</a>
-                <a href="projects" class="projects txt-pro" id="ani-nav">Projects</a>
-                <a href="#connect" class="contact txt-pro" id="ani-nav">contact</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="txt-pro nav-link active">Home</a>
+                <a href="#about" class="txt-pro nav-link">About</a>
+                <a href="#skills" class="txt-pro nav-link">Skills</a>
+                <a href="#projects" class="txt-pro nav-link">Projects</a>
+                <a href="#contact" class="txt-pro nav-link">Contact</a>
                 
-                <button class="hire-me">Hire Me</button>
-
+                <a href="#contact" class="hire-me-btn">Hire Me</a>
             </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
         </nav>    
     </header>
 
     <main>
-        <section class="hero-section">
-
-            
-            <div class="welcome">
-                <p class="name">It's <span class="my-name">Gouranga</span></p>
-                <p class="animated-text">I'm a <span class="role-name"></span></p>
-                <article class="welcome-msg">I specialize in building scalable, efficient, and innovative digital solutions. I'm passionate about writing clean code and solving hard problems. Take a look at my recent projects below.</article>
-                
-                <div class="buttons">
-                    <button class="to-project">Enter project</button>
-                    <button class="contact-me">Let's talk</button>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="welcome">
+                    <p class="name">It's <span class="my-name">Gouranga</span></p>
+                    <p class="animated-text">I'm a <span class="role-name" id="role-text">Full-Stack Engineer</span></p>
+                    <article class="welcome-msg">
+                        I specialize in building scalable, efficient, and innovative digital solutions. I'm passionate about writing clean code, crafting intuitive user interfaces, and solving hard engineering problems. Take a look at my recent work below.
+                    </article>
+                    
+                    <div class="buttons">
+                        <a href="#projects" class="btn to-project">Enter Projects</a>
+                        <a href="#contact" class="btn contact-me">Let's Talk</a>
+                    </div>
                 </div>
 
+                <div class="profile-wrapper">
+                    <div class="profile-pic" aria-label="Profile picture of Gouranga"></div>
+                    <div class="profile-glow"></div>
+                </div>
             </div>
-            <div class="profile-pic"></div>
-            <div class="background"></div>
-
         </section>
         
-        <section class="about-section">
-            <h1 class="about-me">About Me</h1>
-            <div class="about-describtion"><p class="describtion">Bridging technical excellence, modern UI design, and scalable software engineering.</p></div>
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-description">
+                    <p class="description">Bridging technical excellence, modern UI design, and scalable software engineering.</p>
+                </div>
+            </div>
 
-            <section class="content-section">
+            <div class="content-section">
                 <div class="professional-overview-section">
                     <h3 class="professional-overview">Professional Overview</h3>
                     <article class="main-content">
-                        <p class="para-1"> I am a Full-Stack Software Engineer with a passion for building fast, reliable, and visually refined web applications. I combine solid software engineering principles with modern design systems to create seamless user experiences that deliver business value.</p>
-                        <br>
+                        <p class="para-1">I am a Full-Stack Software Engineer with a passion for building fast, reliable, and visually refined web applications. I combine solid software engineering principles with modern design systems to create seamless user experiences that deliver business value.</p>
                         <p class="para-2">Specializing in frontend component architecture and backend API integrations, I focus on writing maintainable code, optimizing performance, and building accessible software that users love.</p>
                     </article>
-                    <section class="skill-showcase">
-                        <div class="first-line">
-                            <button class="react-next-js">React & Next.js</button>
-                            <button class="javascript">Javascript</button>
+                    
+                    <div class="skill-showcase">
+                        <div class="skill-row">
+                            <span class="skill-badge react-next-js">React & Next.js</span>
+                            <span class="skill-badge javascript">JavaScript</span>
                         </div>
-                        <div class="second-line">
-                            <button  class="nodejs-expressjs">Nodejs & Expressjs</button >
-                            <button  class="restful-apis">Restful APIs</button >
+                        <div class="skill-row">
+                            <span class="skill-badge nodejs-expressjs">Node.js & Express</span>
+                            <span class="skill-badge restful-apis">RESTful APIs</span>
                         </div>
-                        <div class="third-line">
-                            <button  class="html-css">Html & Css</button >
-                            <button  class="sql-database">Sql database</button >
+                        <div class="skill-row">
+                            <span class="skill-badge html-css">HTML & CSS</span>
+                            <span class="skill-badge sql-database">SQL & Databases</span>
                         </div>
-                        <div class="fourth-line">
-                            <button  class="git">Git</button >
-                            <button class="ui-ux-design">UI/UX Designer</button >
+                        <div class="skill-row">
+                            <span class="skill-badge git">Git & GitHub</span>
+                            <span class="skill-badge ui-ux-design">UI/UX Design</span>
                         </div>
-                    </section>
+                    </div>
                 </div>
+
                 <div class="stats-section">
-                    <section class="first">
-                        <h2 class="profile">ENGINEERING PROFILE</h2>
-                        <button class="openwork">Open To Work</button>
-                    </section>
-                    <section class="second">
-                        <div id="lane1">
-                            <div id="name" class="sec">name :</div>
-                            <DIV id="MY-NAME " style="color: aqua; text-shadow: 0 0 20px aqua;">Gouranga</DIV>
+                    <div class="first">
+                        <h3 class="profile-header">ENGINEERING PROFILE</h3>
+                        <span class="openwork">Open To Work</span>
+                    </div>
+                    <div class="second">
+                        <div class="lane">
+                            <div class="sec">Name :</div>
+                            <div id="MY-NAME" class="val val-name">Gouranga</div>
                         </div>
-                        <div id="lane1">
-                            <div id="role" class="sec">role :</div>
-                            <DIV id="MY-role" style="color: rgb(62, 11, 128); text-shadow: 0 0 20px rgb(62, 11, 128);" >Full-Stack engineer  </DIV>
+                        <div class="lane">
+                            <div class="sec">Role :</div>
+                            <div id="MY-ROLE" class="val val-role">Full-Stack Engineer</div>
                         </div>
-                        <div id="lane1">
-                            <div id="focus" class="sec">focus :</div>
-                            <DIV id="My-focus" style="color: rgb(254, 254, 255); text-shadow: 0 0 20px rgb(238, 236, 240);">Full-Stack web developer </DIV>
+                        <div class="lane">
+                            <div class="sec">Focus :</div>
+                            <div id="MY-FOCUS" class="val val-focus">Web Apps & API Architecture</div>
                         </div>
-                        <div id="lane1">
-                            <div id="status" class="sec">status :</div>
-                            <DIV id="MY-status" style="color: rgb(62, 11, 128); text-shadow: 0 0 20px rgb(62, 11, 128);">learning new things  </DIV>
+                        <div class="lane">
+                            <div class="sec">Status :</div>
+                            <div id="MY-STATUS" class="val val-status">Building & Learning</div>
                         </div>
-                        
-                    </section>
-                    <section class="third">
+                    </div>
+                    <div class="third">
                         <div class="quotes">
-                            <article class="quote">"  I believe that the best software is born at the intersection of rigorous logic and creative design. Whether I am diving deep into the complexities of data structures and algorithms, optimizing performance with C++, or crafting intuitive front-end experiences, my goal remains the same: to build robust, elegant solutions that solve real-world problems. Every line of code is an opportunity to learn, optimize, and engineer the future.  "</article>
+                            <blockquote class="quote">
+                                "I believe that the best software is born at the intersection of rigorous logic and creative design. Whether I am diving deep into algorithms, optimizing performance, or crafting intuitive user interfaces, my goal remains to build robust, elegant solutions that solve real-world problems."
+                            </blockquote>
                         </div>
-                    </section>
+                    </div>
                 </div>
-            </section>
+            </div>
         </section>
 
+        <!-- SKILLS SECTION -->
+        <section class="skills-section" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">My Expertise</h2>
+                <p class="about-skills-section">A breakdown of my core technical strengths and engineering capabilities.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="expertise-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Frontend Engineering</h3>
+                    <p>Building responsive, accessible, dynamic user interfaces with modern React, Next.js, HTML5, CSS3/Sass, and modern JavaScript (ES6+).</p>
+                    <ul class="tag-list">
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Tailwind / CSS</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-icon">⚙️</div>
+                    <h3>Backend Architecture</h3>
+                    <p>Designing robust RESTful APIs, server side logic, authentication, microservices, and databases to power high-concurrency applications.</p>
+                    <ul class="tag-list">
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>REST APIs</li>
+                        <li>PostgreSQL / SQL</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-icon">🎨</div>
+                    <h3>UI/UX & Systems</h3>
+                    <p>Creating cohesive design tokens, glassmorphism UI components, fluid animations, wireframes, and design system specifications.</p>
+                    <ul class="tag-list">
+                        <li>Design Systems</li>
+                        <li>Wireframing</li>
+                        <li>Responsive Layouts</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="card-icon">🚀</div>
+                    <h3>DevOps & Tooling</h3>
+                    <p>Managing code repositories, automated workflows, continuous integration, version control, and cloud deployments.</p>
+                    <ul class="tag-list">
+                        <li>Git & GitHub</li>
+                        <li>Vercel / Netlify</li>
+                        <li>CI/CD</li>
+                        <li>Performance Tuning</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section class="projects-section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="about-skills-section">A showcase of recent web applications and software builds.</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-banner project-banner-1">
+                        <span class="project-badge">Featured</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Cosmic Developer Portfolio</h3>
+                        <p>A high-performance personal developer portfolio featuring dark mode aesthetics, glassmorphic UI cards, and responsive CSS animations.</p>
+                        <div class="project-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Glassmorphism</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#home" class="project-btn demo-btn">Live Preview</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">Code Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-banner project-banner-2">
+                        <span class="project-badge">Full Stack</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Full-Stack SaaS Platform</h3>
+                        <p>A cloud dashboard application with user authentication, analytics charts, subscription management, and REST API integration.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>SQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="project-btn demo-btn">Live Demo</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">Code Repo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-banner project-banner-3">
+                        <span class="project-badge">Web App</span>
+                    </div>
+                    <div class="project-body">
+                        <h3>Real-Time Task Manager</h3>
+                        <p>An interactive workflow and task board application with real-time status updates, drag-and-drop ordering, and dark mode theme options.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>TypeScript</span>
+                            <span>Tailwind</span>
+                            <span>REST API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#contact" class="project-btn demo-btn">Live Demo</a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">Code Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="about-skills-section">Have a project in mind, a job opportunity, or want to collaborate? Let's connect!</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-intro">Feel free to reach out through the form or via direct email and social channels below.</p>
+                    
+                    <div class="info-item">
+                        <span class="info-icon">📧</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p><a href="mailto:gourangabehra3551@gmail.com">gourangabehra3551@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Available Worldwide / Remote</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💼</span>
+                        <div>
+                            <strong>Work Status</strong>
+                            <p>Open for Full-time Roles & Contracts</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/InfiniteLeveling" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                        <a href="https://www.linkedin.com/in/gouranga-behera-337212416/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="user-name">Your Name</label>
+                        <input type="text" id="user-name" name="name" placeholder="enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">Your Email</label>
+                        <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Opportunity" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+        </section>
     </main>
-    
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2026 Gouranga . Dev. All rights reserved.</p>
+            <a href="#home" class="back-to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
