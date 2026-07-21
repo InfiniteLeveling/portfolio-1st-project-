@@ -359,6 +359,7 @@ section {
     box-shadow: 0 0 40px rgba(139, 92, 246, 0.4), 0 0 80px rgba(6, 182, 212, 0.2);
     animation: float 6s ease-in-out infinite;
     transition: var(--transition-smooth);
+    scale: 1.3;
 }
 
 .profile-pic:hover {
@@ -606,6 +607,60 @@ section {
 /* --------------------
    PROJECTS SECTION
    -------------------- */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.coming-soon-box {
+    width: 100%;
+    max-width: 700px;
+    min-height: 200px;
+    background: var(--glass-bg);
+    border: 1px dashed rgba(139, 92, 246, 0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition-smooth);
+}
+
+.coming-soon-box:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.25);
+}
+
+.coming-soon-tag {
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(6, 182, 212, 0.2));
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    font-family: var(--font-title);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(6, 182, 212, 0.3);
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+        transform: scale(1.03);
+    }
+}
 
 .projects-grid {
     display: grid;
