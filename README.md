@@ -2,14 +2,12 @@
 
 # 🌌 Gouranga . Dev — Modern Developer Portfolio
 
-### *A sleek, high-impact personal portfolio featuring glassmorphism, glowing accents, & futuristic dark-mode aesthetics.*
+### *A sleek, high-impact personal portfolio built with native HTML5, CSS3, and JavaScript featuring glassmorphism, glowing accents, & cosmic dark-mode aesthetics.*
 
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg?style=for-the-badge)](../LICENSE)
 [![Design-Dark_Mode-7a17ba](https://img.shields.io/badge/Design-Dark%20Mode-7a17ba?style=for-the-badge&logo=visualstudiocode)](style.css)
 [![Status-Active-brightgreen](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)]()
 
@@ -17,18 +15,18 @@
 
 </div>
 
-## 🧲 The Hook
+## 🧲 Overview
 
 > **First impressions matter. In a sea of cookie-cutter portfolios, your online presence should leave a lasting impression.**
 >
-> **Gouranga . Dev** is a crafted personal developer portfolio designed to showcase modern web design standards—featuring dark cosmic gradients, glassmorphism UI components, glowing neon accents, an interactive skill showcase, and an engineering profile dashboard.
+> **Gouranga . Dev** is a personal developer portfolio built entirely with **clean, lightweight native web technologies (HTML5, CSS3, and ES6+ JavaScript)**. It features a cosmic dark gradient design, glassmorphism UI components, dynamic typewriter text animation, smooth scroll spy navigation, responsive mobile hamburger drawer, floating avatar effects, an interactive skills showcase, and an engineering profile dashboard.
 
 ---
 
 ## 📌 Table of Contents
 
 - [🌌 Gouranga . Dev — Modern Developer Portfolio](#-gouranga--dev--modern-developer-portfolio)
-  - [🧲 The Hook](#-the-hook)
+  - [🧲 Overview](#-overview)
   - [📌 Table of Contents](#-table-of-contents)
   - [✨ Features](#-features)
   - [🛠️ Tech Stack](#️-tech-stack)
@@ -45,23 +43,31 @@
 
 | Feature | Description |
 | :--- | :--- |
-| **🌌 Cosmic Dark Aesthetic** | Deep multi-stop gradient background (`#030008` ➔ `#0c051a` ➔ `#14082e`) creating a premium modern feel. |
-| **🔎 Glassmorphism Navbar** | Sticky header with background blur (`backdrop-filter: blur(10px)`), dynamic shadows, and glowing accent borders. |
-| **🔮 Animated Navigation** | Sleek sliding underline effect on hover (`::after` pseudo-element with neon gradient fills). |
-| **🖼️ Glowing Profile Avatar** | Circular portrait container with multi-layer CSS box shadows (`box-shadow: 0 0 25px...`) and scale transformation. |
-| **⚡ Call to Action CTAs** | Glowing gradient buttons ("Enter project", "Let's talk", and "Hire Me") designed to drive engagement. |
-| **👨‍💻 About & Overview** | Comprehensive section detailing professional overview, engineering principles, and core focus areas. |
-| **🚀 Skill Showcase Grid** | Interactive badges highlighting React, Next.js, JavaScript, Node.js, Express, REST APIs, SQL, Git, and UI/UX. |
-| **📊 Engineering Profile Card** | Dashboard interface featuring "Open To Work" status badge, dynamic role highlights, and core philosophy quote. |
-| **📱 Pure Lightweight Code** | 100% clean, ultra-fast loading HTML5 & CSS3 with custom design tokens. |
+| **🌌 Cosmic Dark Aesthetic** | Deep multi-stop gradient background (`#030008` ➔ `#0c051a` ➔ `#14082e`) with radial glow overlays for a modern feel. |
+| **🔎 Glassmorphism Navbar** | Sticky header with backdrop blur (`backdrop-filter: blur(16px)`), subtle borders, dynamic shadows, and responsive layout. |
+| **⌨️ Dynamic Typewriter Effect** | JavaScript-powered typing & deleting animation in the hero section dynamically cycling through developer roles. |
+| **📱 Mobile Hamburger Drawer** | Responsive side drawer navigation menu with smooth toggle transition for mobile screens. |
+| **📍 Active Scroll Spy** | Dynamic JavaScript scroll observer that highlights the active navbar menu link as you scroll through sections. |
+| **🖼️ Floating Avatar** | Circular portrait container with multi-layer CSS box shadows and infinite smooth CSS floating keyframe animation. |
+| **⚡ Call to Action Buttons** | Glowing gradient CTA buttons ("Enter Projects", "Let's Talk", "Hire Me") driving user engagement. |
+| **👨‍💻 Professional Overview** | Detailed section highlighting engineering background, design principles, and core focus areas. |
+| **🚀 Skill Showcase & Expertise Cards** | Clean visual cards breaking down Frontend Engineering, Backend Architecture, UI/UX Systems, and DevOps. |
+| **📊 Engineering Profile Card** | Dashboard interface featuring "Open To Work" status badge, personal focus area, and engineering philosophy quote. |
+| **💼 Featured Projects Showcase** | Card grid highlighting recent web applications with live preview buttons, code repository links, and technology tags. |
+| **📧 Interactive Contact Form** | Form layout complete with input fields, email link, social media links, and JavaScript status confirmation message. |
+| **⚡ Zero Dependencies** | Pure native code requiring no build step, node modules, or external frameworks to run. |
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend Core**: [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML) semantic layout (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`) & [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) Flexbox, keyframes, transitions, and glassmorphism filters
-- **Engineering Competencies**: React, Next.js, JavaScript (ES6+), Node.js, Express.js, RESTful APIs, SQL Databases, Git, UI/UX Design
-- **Typography**: Google Fonts ([Google Sans](https://fonts.google.com/), [Merriweather](https://fonts.google.com/specimen/Merriweather), [Roboto](https://fonts.google.com/specimen/Roboto))
+### Project Build Stack
+- **HTML5**: Semantic document structure (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`, `<form>`).
+- **CSS3**: Custom CSS design tokens (`:root` variables), Flexbox, CSS Grid, glassmorphism (`backdrop-filter`), keyframe animations, smooth scrolling, and media queries.
+- **JavaScript (ES6+)**: Vanilla client-side script for typewriter role animation, hamburger menu state, scroll spy link activation, and contact form handling.
+- **Typography**: Google Fonts ([Inter](https://fonts.google.com/specimen/Inter), [Outfit](https://fonts.google.com/specimen/Outfit), [Merriweather](https://fonts.google.com/specimen/Merriweather)).
+
+*(Note: Skills showcased inside the portfolio UI—such as React, Next.js, Node.js, Express, SQL, etc.—represent engineering competencies, while this website itself is lightweight native HTML/CSS/JS).*
 
 ---
 
@@ -70,11 +76,11 @@
 ```text
 portfolio/
 ├── assets/
-│   ├── Gemini_Generated_Image_y5kwhzy5kwhzy5kw.png  # Profile Avatar Image
-│   ├── file_0000000077b47208862170be7794007b.png     # Graphic Asset
-│   └── color.txt                                    # Palette reference notes
-├── index.html                                       # Main page template
-├── style.css                                        # Core design tokens & styles
+│   ├── Gemini_Generated_Image_l12uopl12uopl12u.png  # Profile Avatar Image
+│   └── color.txt                                    # Palette & design token notes
+├── index.html                                       # Main HTML structure & markup
+├── style.css                                        # CSS design tokens, layout & animations
+├── script.js                                       # Typewriter, navigation & interactive logic
 └── README.md                                        # Documentation
 ```
 
@@ -82,7 +88,7 @@ portfolio/
 
 ## 🚀 Quick Start
 
-Getting this portfolio up and running locally is instantaneous:
+Running this portfolio locally is fast and requires zero setup:
 
 ### 1️⃣ Clone the Repository
 ```bash
@@ -93,47 +99,51 @@ cd portfolio/portfolio
 ### 2️⃣ Run Locally
 
 #### Option A: Direct Browser Preview
-Double-click `index.html` to launch it immediately in your browser.
+Double-click `index.html` to launch it immediately in any browser.
 
 #### Option B: VS Code Live Server (Recommended)
-Open the folder in **VS Code**, right-click `index.html`, and select **Open with Live Server**.
+Open the project in **VS Code**, right-click `index.html`, and select **Open with Live Server**.
 
-#### Option C: Python HTTP Server
+#### Option C: Python Local Server
 ```bash
 # Python 3
 python -m http.server 8000
 ```
-Then navigate to `http://localhost:8000` in your browser.
+Then navigate to `http://localhost:8000` in your web browser.
 
 ---
 
 ## 💻 Customization Guide
 
-Easily personalize this portfolio for your own brand:
+Easily adapt this portfolio for your personal brand:
 
-### 1. Update Bio & Copy (`index.html`)
-
+### 1. Personalize Copy & Info (`index.html`)
+Update your name, bio, social media profiles, and contact email:
 ```html
-<!-- Customize Name & Branding -->
-<a href="#home" class="logo">Gouranga <span class="-dev">. Dev</span></a>
+<!-- Branding Logo -->
+<a href="#home" class="logo">YourName <span class="-dev">. Dev</span></a>
 
-<!-- Hero Section Introduction -->
-<p class="name">It's <span class="my-name">Gouranga</span></p>
-<p class="role">I'm a Full Stack Developer</p>
-<article class="welcome-msg">
-  I specialize in building scalable, efficient, and innovative digital solutions.
-</article>
+<!-- Contact Details -->
+<a href="mailto:your.email@example.com">your.email@example.com</a>
 ```
 
-### 2. Replace Profile Avatar
+### 2. Customize Typewriter Roles (`script.js`)
+Edit the `roles` array to match your technical title:
+```javascript
+const roles = [
+    'Full-Stack Engineer',
+    'Frontend Developer',
+    'UI/UX Enthusiast',
+    'Problem Solver'
+];
+```
 
-In `style.css`, update the `.profile-pic` class with your image path:
-
+### 3. Replace Profile Picture (`style.css`)
+Update the `background-image` path inside `.profile-pic`:
 ```css
 .profile-pic {
-    /* Replace with your image location */
-    background-image: url("assets/your-profile-photo.png"),
-        linear-gradient(135deg, #82209d, #7a17ba, #3800d1, #2626fd);
+    background-image: url("assets/your-photo.png"),
+        linear-gradient(135deg, var(--accent-purple), var(--accent-cyan), var(--accent-pink));
 }
 ```
 
@@ -141,30 +151,42 @@ In `style.css`, update the `.profile-pic` class with your image path:
 
 ### 🎨 Visual Preview
 
-> 📁 **[Portfolio UI Preview]**
+> 📁 **[Portfolio Profile Picture Asset]**
 >
-> `![Gouranga Dev Portfolio Preview](assets/Gemini_Generated_Image_y5kwhzy5kwhzy5kw.png)`
+> ![Gouranga Dev Profile Avatar](assets/Gemini_Generated_Image_l12uopl12uopl12u.png)
 
 ---
 
 ## 🛠️ Architecture & Layout Design
 
-The architecture follows modern clean layout separation:
+The page structure follows modern semantic HTML sectioning:
 
 ```mermaid
 graph TD;
-    Body["body: Cosmic Dark Background"] --> Header["Header: Glassmorphic Sticky Navigation"]
+    Body["body: Cosmic Dark Gradient Background"] --> Header["Header: Glassmorphic Sticky Navbar"]
     Header --> Logo["Brand Logo: Gouranga . Dev"]
-    Header --> NavLinks["Nav Items: Home, About, Skills, Projects, Contact"]
-    Header --> HireBtn["CTA Button: Hire Me"]
-    
-    Body --> Hero["Main: Hero Section"]
-    Hero --> Bio["Welcome Box: Name, Role, Bio & CTA Buttons"]
-    Hero --> Avatar["Profile Pic: Glowing Avatar with Border Gradient"]
+    Header --> NavLinks["Nav Links: Home, About, Skills, Projects, Contact"]
+    Header --> MobileDrawer["Hamburger Menu & Mobile Drawer"]
 
-    Body --> About["About Section"]
-    About --> Overview["Professional Overview & Skill Showcase Grid"]
-    About --> ProfileCard["Engineering Profile Card: Status, Role & Quote"]
+    Body --> Hero["Hero Section (#home)"]
+    Hero --> Bio["Welcome & JS Typewriter Role Text"]
+    Hero --> Avatar["Floating Animated Profile Avatar"]
+
+    Body --> About["About Section (#about)"]
+    About --> Overview["Overview & Interactive Skill Badges"]
+    About --> ProfileCard["Engineering Dashboard: Status & Quote"]
+
+    Body --> Skills["Expertise Section (#skills)"]
+    Skills --> SkillCards["Cards: Frontend, Backend, UI/UX, DevOps"]
+
+    Body --> Projects["Featured Projects Section (#projects)"]
+    Projects --> ProjectGrid["Project Showcase Cards with Live & Code links"]
+
+    Body --> Contact["Contact Section (#contact)"]
+    Contact --> Info["Contact Info & Social Links"]
+    Contact --> Form["Interactive JS Contact Form"]
+
+    Body --> Footer["Footer: Copyright & Back To Top link"]
 ```
 
 ---
@@ -186,7 +208,7 @@ Contributions, issues, and feature requests are welcome!
 Built with ❤️ by **Gouranga**.
 
 - **License**: Released under the [MIT License](LICENSE).
-- **Fonts**: [Google Fonts](https://fonts.google.com)
+- **Fonts**: [Google Fonts](https://fonts.google.com) (Inter, Outfit, Merriweather)
 
 ---
 
